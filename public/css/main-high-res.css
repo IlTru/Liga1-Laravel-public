@@ -1,0 +1,1074 @@
+html { height: 100%; }
+
+body {
+    height: 100%; margin: 100px 100px 0px;
+    background-color: yellowgreen;
+    background-image: url('../images/other/background-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.header { background-color: rgba(153, 205, 50, 0.5); height: 100px;}
+
+.footer { background-color: yellowgreen; text-align: center; }  
+
+.footer h3{ margin: 0; min-width: 100%;}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+* a{
+    color:  rgb(0, 0, 0);
+}
+
+* a:hover{
+    color:  rgb(255, 255, 255);
+}
+
+img.small-club-logo{
+    max-height: 25px;
+}
+
+.main-page-content{
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+.logo-container{
+    padding: 10px 0px 0px 50px;
+    float: left;
+}
+
+.logo-container img{
+    max-height: 80px;
+}
+
+.main-menu{
+    margin: auto;
+    height: 45px;
+    width: 36%;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    background:  rgb(153, 205, 50);
+}
+
+.main-menu ul{
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+
+.main-menu ul li{
+    display: inline-block;
+}
+
+.main-menu ul li a{
+    color: white;
+    display: block;
+    padding: 0 10px;
+    font-size: 20px;
+    background:  rgb(153, 205, 50);
+}
+
+.main-menu ul li a:hover, nav ul li a.active{
+    color:  rgb(170, 255, 0);
+}
+
+.main-menu ul ul{
+    position: absolute;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.main-menu ul ul li{
+    display: list-item;
+    position: relative;
+    border-top: none;
+    text-align: center;
+}
+
+.main-menu ul ul li a{
+    line-height: 50px;
+}
+
+.clubs-section{
+    padding: 60px 0px 0px 60px;
+    /* height: 90%; */
+    width: 18%;
+    float: left;
+}
+
+.clubs-section button, .echipa-index-menu button, .jucator-index-menu button{
+    border: 1px solid green;
+    background:rgba(153, 205, 50, 0.5);
+    width: 230px;
+    height: 55px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.echipa-index-menu button{
+    margin-top: 6px;
+    width: 49%;
+}
+
+.clubs-section button:hover, .echipa-index-menu button:hover, .jucator-index-menu button:hover{
+    background:rgb(153, 205, 50);
+}
+
+.clubs-section button:hover{
+    width: 260px;
+}
+
+.meciuri-section{
+    padding-top: 60px;
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.meciuri-section h3, .clasament-section h3{
+    margin: 10px 0px;
+    font-size: 200%;
+    color: white;
+}
+
+.meciuri-section, .clasament-section{
+    font-size: 80%;
+}
+
+.meciuri-table-header{
+    /* height: 60px; */
+}
+
+.meciuri-table-header-data{
+    float: left;
+    margin: 3px;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+    background:rgb(153, 205, 50);
+    color: white;
+}
+
+.meciuri-table-row-data{
+    height: 40px;
+    margin: 3px;
+    border: 3px solid black;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background:rgba(153, 205, 50, 0.7);
+    color: white;
+}
+
+.meciuri-table-row-data .echipa-gazda{
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+.meciuri-table-row-data .scor{
+    float: left;
+    width: 7%;
+    height: 100%;
+}
+
+.meciuri-table-row-data form{
+    height: 100%;
+}
+
+.meciuri-table-row-data button{
+    border: 1px solid green;
+    background:rgba(100, 150, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.meciuri-table-row-data button:hover{
+    background:rgb(100, 150, 0);
+}
+
+.clasament-section{
+    padding-top: 60px;
+    width: 28%;
+    /* height: ; */
+    float: left;
+    text-align: center;
+}
+
+.clasament-section .table-header{
+    width: 100%;
+    height: 40px;
+    margin: 3px 0px;
+}
+
+.clasament-section .table-row{
+    width: 100%;
+    height: 40px;
+    margin: 3px 0px;
+}
+
+.clasament-section .table-header-data{
+    height: 60%;
+    float: left;
+    margin: 0px 2px;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+    background:rgba(153, 205, 50);
+    color: white;
+}
+
+.clasament-section .table-row-data{
+    height: 60%;
+    margin: 0px 2px;
+    border: 3px solid black;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background:rgba(153, 205, 50, 0.7);
+    color: white;
+}
+
+.meciuri-section a, .clasament-section a{
+    color: white;
+}
+
+.meciuri-section a:hover, .clasament-section a:hover{
+    color: rgb(0, 0, 0);
+}
+
+/* ----------------------------------------------------- */
+
+.echipa-index-content{
+    overflow: auto;
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.8);
+}
+
+.club-info-header{
+    height: 230px;
+    background: rgba(153, 205, 50, 0.7);
+}
+
+.club-info-header h1{
+    height: calc(100% - 80px);
+    margin: 80px 100px 0px 100px;
+    float: left;
+}
+
+.club-logo-container{
+    height: calc(100% - 10px);
+    margin: 10px 0px 0px 50px;
+    float: left;
+}
+
+.club-logo-container img{
+    max-height: 200px;
+}
+
+.echipa-index-menu{
+    height: calc(100% - 30px);
+    width: 30%;
+    margin: 30px 0px 0px 50px;
+    float: left;
+}
+
+.lot-container{
+    padding: 50px 0px 0px 50px;
+}
+
+.lot-container button{
+    border: 1px solid green;
+    background:rgba(153, 205, 50, 0.527);
+    width: 16%;
+    height: 100px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.lot-container button:hover{
+    background:rgb(100, 150, 0);
+}
+
+.lot-container img{
+    max-height: 80px;
+}
+
+.lot-container h3{
+    float: right;
+    width: 150px;
+}
+
+.club-statistici-content h1{
+    background: rgba(153, 205, 50, 1);
+    text-align: center;
+    margin: 10px 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.club-statistici-content .pozitii-clasament-section{
+    overflow: auto;
+    width: 100%;
+}
+
+.pozitii-clasament-section .pozitie-clasament-section{
+    float: left;
+    width: 48%;
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.statistici-section{
+    overflow: auto;
+    padding-left: 10px;
+}
+
+.cartonas-section{
+    width: 48%;
+    margin: 10px;
+    float: left;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.club-goluri-section{
+    height: 330px;
+    float: left;
+    width: 50%;
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+.club-gol-section{
+    width: 90%;
+    float: left;
+    text-align: center;
+    margin: 1px 5px;
+    border: 2px solid black;
+}
+
+.club-goluri-chart-section{
+    width: 20%;
+    padding-left: 150px;
+    height: 350px;
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+.alte-statistici-section{
+    float: left;
+    width: 31%;
+    margin: 10px;;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.statistici-section h2{
+    margin: 10px 0px;
+}
+
+.club-meciuri-content{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.club-meciuri-content .meciuri-content{
+    height: 75%;
+    margin: 0% 10%;
+}
+
+/* ----------------------------------------------------- */
+
+.jucator-index-content{
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.8);
+}
+
+.jucator-info-header{
+    height: 300px;
+    background: rgba(153, 205, 50, 0.5);
+}
+
+.jucator-main-info h1{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 38px;
+    float: left;
+}
+
+.jucator-img-container{
+    height: calc(100% - 30px);
+    width: 10%;
+    margin: 30px 50px 0px 50px;
+    float: left;
+}
+
+.jucator-img-container img{
+    max-height: 200px;
+}
+
+.jucator-main-info{
+    width: 30%;
+    margin: 25px 260px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    float: left;
+}
+
+.jucator-main-info h2{
+    margin: 0;
+    font-size: 24px;
+}
+
+.jucator-main-info h3{
+    width: 35%;
+    margin: 5px 0px;
+    border-top: 1px solid black;
+    padding-top: 8px;
+    font-size: 18px;
+    float: left;
+}
+
+.jucator-index-menu{
+    height: calc(100% - 50px);
+    width: 10%;
+    margin: 0px;
+    padding-top: 50px;
+    float: left;
+}
+
+.jucator-statistici-content{
+    min-height: 100%;
+    padding-left: 10px;
+}
+
+.jucator-minute-jucate-content{
+    overflow: auto;
+}
+
+.jucator-statistici-content h1{
+    background: rgba(153, 205, 50, 1);
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.jucator-statistici-content h3{
+    text-align: center;
+}
+
+.etapa-section{
+    width: 6.6%;
+    float: left;
+    text-align: center;
+}
+
+.etapa-section h3{
+    margin: 0;
+    padding: 3px;
+    height: 22px;
+}
+
+.etapa-section .grafic{
+    height: 45px;
+    background: green;
+    margin: 0px 45px;
+}
+
+.jucator-goluri-section{
+    overflow: auto;
+}
+
+.jucator-goluri-section .echipa-goluri-section{
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+.jucator-gol-section{
+    width: 18.6%;
+    float: left;
+    text-align: center;
+    margin: 0px 5px;
+    border: 3px solid black;
+}
+
+.jucator-assisturi-section, .echipa-assisturi-section{
+    overflow: auto;
+    margin: 10px 0px;
+}
+
+.jucator-assist-section, .echipa-assist-section{
+    width: 23.6%;
+    float: left;
+    text-align: center;
+    margin: 0px 5px;
+    border: 3px solid black;
+}
+
+.cartonase-section{
+    overflow: auto;
+}
+
+.cartonas-section{
+    width: 48%;
+    margin: 10px;
+    float: left;
+    border: 3px solid black;
+    text-align: center;
+}
+
+/* ----------------------------------------------------- */
+
+.players-content{
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.7);
+}
+
+.players-content .buttons-section{
+    float: left;
+    width: 30%;
+    overflow: auto;
+}
+
+.players-filters-content{
+    padding: 50px;
+}
+
+.players-content .buttons-section button{
+    border: 1px solid green;
+    background:rgba(153, 205, 50, 0.5);
+    width: 100%;
+    height: 35px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.players-content .buttons-section button:hover{
+    background:rgba(153, 205, 50);
+}
+
+.players-filter-selected{
+    margin-left: 600px;
+}
+
+.players-filter-selected h3{
+    margin: 0;
+}
+
+.players-filter-selected{
+    width: 70%;
+    height: 315px;
+}
+
+.players-filter-selected{
+    font-size: 130%;
+}
+
+.filter-order-section{display: none; margin-left: 300px}
+.filter-order-attribute-section{display: none; float: left}
+.filter-search-section{display: none}
+.filter-club-section{display: none}
+.filter-age-section{display: none}
+.filter-height-section{display: none}
+.filter-weight-section{display: none}
+.filter-position-section{display: none}
+.filter-nationality-section{display: none}
+
+.search-section input[type="text"]{
+    font-size:24px;
+}
+
+.filter-club-section, .filter-position-section, .filter-nationality-section{
+    overflow: auto;
+    height: 315px;
+    width: 50%;
+    font-size: 18px;
+}
+
+.jucatori-section{
+    padding-left: 50px;
+}
+
+.jucatori-section .table{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+  
+.jucatori-section .table-header{
+    display: flex;
+    margin: 0px;
+    height: 60px;
+}
+  
+.jucatori-section .table-header-data{
+    background-color: rgba(153, 205, 50);
+    margin: 2px 2px;
+    border: 2px solid black;
+}
+  
+.jucatori-section .table-row{
+    display: flex;
+    margin: 0px;
+    height: 60px;
+}
+
+.jucatori-section .table-row-data{
+    margin: 2px 2px;
+    border: 2px solid black;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+  
+.jucatori-section h2, .jucatori-section h3, .jucatori-section .icon, .jucatori-section .icon-clickable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+}
+
+.icon img, .icon-clickable img{
+    max-width: 30px;
+}
+
+.icon-clickable img{
+    transition: transform 0.3s;
+}
+  
+.icon-clickable img:hover{
+    transform: scale(2);
+}
+
+.jucatori-section h2{
+    font-size: 20px;
+}
+
+.jucatori-section h3{
+    font-size: 18px;
+}
+
+.page-nav{
+    width: 90%;
+    overflow: auto;
+    padding: 50px 40px;
+}
+
+.page-nav button{
+    border: 1px solid green;
+    margin: 0px 10px;
+    background:rgba(153, 205, 50, 0.5);
+    height: 40px;
+    font-size: 100%;
+    color: white;
+}
+
+.page-nav button:hover{
+    background:rgba(153, 205, 50);
+}
+
+/* ----------------------------------------------------- */
+
+.clasament-index-content{
+    height: 100%;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+.clasament-index-content h1{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin: 0;
+    text-align: center;
+}
+
+.clasament-index-content .table{
+    overflow: auto;
+    margin: 0% 23%;
+}
+
+.clasament-index-content .table-header{
+    width: 100%;
+    height: 40px;
+    margin: 3px 0px;
+}
+
+.clasament-index-content .table-header-data{
+    height: 60%;
+    float: left;
+    margin: 0px 2px;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 100%;
+    text-align: center;
+    background:rgba(153, 205, 50);
+}
+
+.clasament-index-content .table-row{
+    width: 100%;
+    height: 40px;
+    margin: 3px 0px;
+}
+
+.clasament-index-content .table-row-data{
+    height: 60%;
+    margin: 0px 2px;
+    border: 3px solid black;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    font-size: 100%;
+    background:rgba(153, 205, 50, 0.7);
+}
+
+/* ----------------------------------------------------- */
+
+.meciuri-index-content{
+    height: 99%;
+    background-color: rgba(153, 205, 50, 0.85);
+    text-align: center;
+}
+
+.meciuri-index-content h1{
+    margin: 0;
+    text-align: center;
+}
+
+.meciuri-index-content button, .faza-select-section button{
+    border: 1px solid green;
+    border-radius: 25px;
+    background:rgba(153, 205, 50, 0.527);
+    width: 230px;
+    height: 55px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.meciuri-index-content button:hover, .faza-select-section button:hover{
+    background:rgb(153, 205, 50);
+}
+
+.faza-select-section{
+    margin: 0% 28%;
+    padding: 15px 0px 5px 0px;
+}
+
+.meciuri-index-content .meciuri-content{
+    height: 75%;
+    margin: 0% 10%;
+}
+
+.meciuri-index-content .table-header{
+    /* height: 60px; */
+}
+
+.meciuri-content .table-header-data{
+    float: left;
+    min-height: 30px;
+    margin: 3px;
+    border: 3px solid black;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+    background:rgb(153, 205, 50);
+    color: white;
+}
+
+.meciuri-content .table-row-data{
+    min-height: 35px;
+    margin: 3px;
+    border: 3px solid black;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background:rgba(153, 205, 50, 0.7);
+    color: white;
+}
+
+.meciuri-content .table-row-data .echipa-gazda{
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+.meciuri-content .table-row-data .scor{
+    float: left;
+    width: 7%;
+    height: 100%;
+}
+
+.meciuri-content .table-row-data form{
+    height: 100%;
+}
+
+.meciuri-content .table-row-data button{
+    border: 1px solid green;
+    border-radius: 30px;
+    background:rgba(100, 150, 0, 0.5);
+    width: 200px;
+    height: 35px;
+    font-size: 100%;
+    color: white;
+}
+
+.meciuri-content .table-row-data button:hover{
+    background:rgb(100, 150, 0);
+}
+
+.etapa-select-section {
+    width: 100%;
+    overflow: auto;
+}
+
+.etapa-select-section button{
+    margin: 5px;
+    border: 1px solid green;
+    background:rgba(153, 205, 50, 0.3);
+    width: 6%;
+    height: 55px;
+    float: left;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.etapa-select-section button:hover{
+    background:rgb(153, 205, 50);
+}
+
+/* ----------------------------------------------------- */
+
+.match-stats-content{
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.7);
+}
+
+.match-stats-header{
+    height: 230px;
+    background: rgba(153, 205, 50, 0.7);
+}
+
+.match-stats-header h1{
+    margin: 0px;
+    font-size: 26px;
+}
+
+.match-stats-info{
+    float: left;
+    width: 60%;
+    padding-top: 30px;
+}
+
+.match-stats-title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.match-stats-title .club-logo{
+    float: left;
+    max-height: 60px;
+    width: 20%;
+    text-align: center;
+}
+
+.match-stats-title .score {
+    padding: 8px;
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+.match-stats-title img{
+    max-height: 60px;
+}
+
+.match-stats-content .title{
+    /* float:  left; */
+    height: 40px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.match-stats-menu{
+    padding-top: 30px;
+    width: 230px;
+    float: left;
+}
+
+.match-stats-menu button{
+    border: 1px solid green;
+    background:rgba(153, 205, 50, 0.5);
+    width: 230px;
+    height: 55px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.match-stats-menu button:hover{
+    background:rgba(153, 205, 50);
+}
+
+.match-stats-info-content{
+    padding: 100px;
+}
+
+.match-stats-lineups-content{
+    padding: 50px 200px;
+}
+
+.match-stats-content .table, .match-stats-lineups-content .table, .match-stats-events-content .table{
+    display: flex;
+    flex-direction: column;
+}
+
+.match-stats-content .table-row, .match-stats-lineups-content .table-row, .match-stats-events-content.table-row{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.match-stats-content .table-row-data, .match-stats-lineups-content .table-row-data, .match-stats-events-content.table-row-data{
+    border-bottom: 2px solid black;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+
+img.club-logo, img.event-logo{
+    max-height: 50px;
+}
+
+img.player-img{
+    max-height: 50px;
+    float: left;
+}
+
+.match-stats-info-content h1, .match-stats-lineups-content h1{
+    height: 50px;
+    margin: 0;
+    padding-top: 15px;
+    font-size: 28px;
+}
+
+.match-stats-events-content{
+    padding: 50px 400px;
+}
+
+.match-stats-events-content h1{
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+/* ----------------------------------------------------- */
+
+.season-stats-content{
+    min-height: 100%;
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+.season-stats-content .phase-select-section{
+    margin: 0% 28%;
+    padding: 15px 0px 5px 0px;
+}
+
+.season-stats-content .phase-select-section h1{
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.season-stats-content .phase-select-section button{
+    border: 1px solid green;
+    border-radius: 25px;
+    background:rgba(153, 205, 50, 0.5);
+    width: 230px;
+    height: 55px;
+    font-size: 100%;
+    color: white;
+    font-family: 'Lucida Sans';
+}
+
+.season-stats-content button:hover{
+    background:rgb(153, 205, 50);
+}
+
+.season-stats-content .stats-content{
+    padding: 10px;
+    overflow: auto;
+}
+
+.season-stats-content .stats-content h1{
+    background: rgba(153, 205, 50);
+    text-align: center;
+    margin: 10px 10px 10px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 28px;
+}
+
+.season-stats-content .stats-content .club-stats{
+    float: left;
+    width: 23%;
+    margin: 15px;
+}
+
+.season-stats-content .stats-content .player-stats{
+    float: left;
+    width: 48%;
+    margin: 15px;
+}
+
+.season-stats-content .stats-content h2, .season-stats-content .stats-content h3{
+    background: rgba(153, 205, 50);
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.season-stats-content .stats-content h3{
+    background: rgba(153, 205, 50, 0.5);
+}
+
+.season-stats-content .stats-content h3 .position{
+    float: left;
+    padding-left: 15px;
+}
+
+.season-stats-content .stats-content h3 .stat{
+    float: right;
+    padding-right: 15px;
+}
